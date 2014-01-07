@@ -13,13 +13,9 @@ except:
 
 
 b = Popen(["ipython", "notebook", "--no-browser", "--port", "%s" %(port), "--pylab", "inline"])
-b.wait()
 
 a = Popen(["ssh", "-R", ("%s:localhost:%s" %(port, port)), "oolite", "-N"])
-
-
-
-
+b.wait()
 a.wait()
 
 if c:
