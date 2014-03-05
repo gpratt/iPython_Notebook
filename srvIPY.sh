@@ -1,1 +1,2 @@
-python serve_ipython.py 8510 8511
+#!/bin/bash
+serve_ipython.py 8510 8511
